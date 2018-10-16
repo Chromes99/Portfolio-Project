@@ -1,0 +1,93 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #ADADAD;
+  font-family: 'Teko', sans-serif;
+  font-size: 16px;
+}
+
+h1,
+h3,
+.container1 {
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+#main-content {
+  display: block;
+  max-width: 1000px;
+  margin: auto;
+}
+
+img {
+  width: 25%;
+  height : 25%;
+
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+}
+
+.container1 {
+  display:flex;
+  order: 1;
+  display: block;
+  float:left;
+}
+
+.container2 {
+  display: flex;
+  order : 2;
+  justify-content: flex-end;
+  display: block;
+  float: right;
+}
+
+.project {
+  float: left;
+  width: 33.3%;
+  text-align: center;
+}
+
+.project > img {
+  width: 320px;
+  height: auto;
+  max-width: 100%;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.container2 > h3 {
+  margin-left: 0px;
+}
+
+hr {
+  clear: both;
+}
+
+#footer {
+  display: block;
+  clear: both;
+}
+
+@media screen and (max-width: 730px) {
+  .container1 {float:none;}
+  .container2 {float: none;}
+}
+
+@media screen and (max-width: 600px) {
+  .project {float: none;}
+  h1, h2, h3 {font-size: 1.2em;}
+  h2 {text-align: center;}
+  .project {width: 100%}
+}
